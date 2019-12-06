@@ -4,6 +4,7 @@ const submitQuiz = function() {
     checkedAnswers();
   });
 };
+// Adding a comment to practice Git flow
 
 const checkedAnswers = function() {
   const valuesArray = [];
