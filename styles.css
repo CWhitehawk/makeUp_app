@@ -312,3 +312,33 @@ button:active {
   color: deeppink;
   outline: 1px solid mediumvioletred;
 }
+
+.box {
+  display: flex;
+  background-color: rgba(255, 20, 147, 0.8);
+  padding: 40px;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.eyeshadow,
+.lipstick {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.eyeshadow img,
+.lipstick img {
+  max-width: 300px;
+  height: 250px;
+  border: 5px solid darkmagenta;
+  border-radius: 5px;
+}
+
+h3 {
+  color: white;
+}
