@@ -240,21 +240,24 @@ fieldset {
   display: flex;
   align-content: flex-start;
   width: 750px;
+  border: 6px double darkmagenta;
+  border-radius: 9px;
 }
 
-.palette {
+/* .palette {
   border: 3px solid red;
-}
+} */
 
 footer {
   display: flex;
-  background-color: plum;
-  color: darkmagenta;
+  background-color: #d5589f;
+  color: white;
   margin-top: 70px;
   margin-bottom: 70px;
   justify-content: center;
-  border: 2px solid deeppink;
+  border: 2px solid darkmagenta;
   border-radius: 12px;
+  font-size: 18px;
 }
 
 h1 {
@@ -262,7 +265,7 @@ h1 {
 }
 
 input:checked {
-  border: 6px solid palevioletred;
+  border: 6px solid#d5589f;
 }
 
 input {
@@ -293,8 +296,6 @@ legend {
   color: white;
   background-color: #ff007f;
   padding: 5px 10px;
-  /* border-radius: 0;
-  border: 0; */
   font-size: 14px;
 }
 
@@ -320,6 +321,7 @@ button:active {
   justify-content: center;
   width: 80%;
   margin: 0 auto;
+  border: 3px dashed darkmagenta;
 }
 
 .eyeshadow,
@@ -335,7 +337,7 @@ button:active {
 .lipstick img {
   max-width: 300px;
   height: 250px;
-  border: 5px solid darkmagenta;
+  border: 8px double darkmagenta;
   border-radius: 5px;
 }
 

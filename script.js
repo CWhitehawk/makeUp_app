@@ -23,7 +23,7 @@ const result = function(eyes, hair, mood) {
     showResults(makeUp.eyeshadow[0], makeUp.lipstick[0]);
   } else if (eyes === "brown" && hair === "brown" && mood === "vibrant") {
     showResults(makeUp.eyeshadow[1], makeUp.lipstick[1]);
-  } else if (eyes === "brown" && hair === "brown" && mood === "neutral") {
+  } else if (eyes === "brown" && hair === "brown" && mood === "dark") {
     showResults(makeUp.eyeshadow[2], makeUp.lipstick[2]);
   } else if (eyes === "brown" && hair === "blonde" && mood === "neutral") {
     showResults(makeUp.eyeshadow[0], makeUp.lipstick[3]);
@@ -33,7 +33,7 @@ const result = function(eyes, hair, mood) {
     showResults(makeUp.eyeshadow[2], makeUp.lipstick[5]);
   } else if (eyes === "brown" && hair === "black" && mood === "neutral") {
     showResults(makeUp.eyeshadow[0], makeUp.lipstick[6]);
-  } else if (eyes === "brown" && hair === "black" && mood === "neutral") {
+  } else if (eyes === "brown" && hair === "black" && mood === "vibrant") {
     showResults(makeUp.eyeshadow[1], makeUp.lipstick[7]);
   } else if (eyes === "brown" && hair === "black" && mood === "dark") {
     showResults(makeUp.eyeshadow[2], makeUp.lipstick[8]);
@@ -51,7 +51,7 @@ const result = function(eyes, hair, mood) {
     showResults(makeUp.eyeshadow[2], makeUp.lipstick[14]);
   } else if (eyes === "blue" && hair === "black" && mood === "neutral") {
     showResults(makeUp.eyeshadow[0], makeUp.lipstick[15]);
-  } else if (eyes === "blue" && hair === "black" && mood === "neutral") {
+  } else if (eyes === "blue" && hair === "black" && mood === "vibrant") {
     showResults(makeUp.eyeshadow[1], makeUp.lipstick[16]);
   } else if (eyes === "blue" && hair === "black" && mood === "dark") {
     showResults(makeUp.eyeshadow[2], makeUp.lipstick[17]);
@@ -79,9 +79,14 @@ const result = function(eyes, hair, mood) {
 const showResults = function(eyeshadowIndex, lipstickIndex) {
   const htmlToAppend = `
 <div class="box">
-  <div class="eyeshadow"><h3>Your ideal eyeshadow palette is: ${eyeshadowIndex.name}</h3>
-<img src=${eyeshadowIndex.path}/></div>
-<div class="lipstick"><h3>Your ideal lipstick colour is: ${lipstickIndex.name}</h3>
+  <div class="eyeshadow">
+  <h3>Your ideal eyeshadow palette is: 
+  <p>${eyeshadowIndex.name}</p></h3>
+<img src=${eyeshadowIndex.path}/>
+</div>
+<div class="lipstick">
+<h3>Your ideal lipstick colour is: 
+<p>${lipstickIndex.name}</p></h3>
 <img src=${lipstickIndex.path}/></div>
 </div>
 `;
@@ -94,125 +99,125 @@ const makeUp = {
   eyeshadow: [
     {
       path: "./assets/neutralpal1.jpg",
-      name: "Neutral Palette"
+      name: "Neutral Colours"
     },
     {
       path: "./assets/vibrantpal1.jpg",
-      name: "Vibrant Palette"
+      name: "Vibrant Colors"
     },
     {
       path: "./assets/darkpal1.jpg",
-      name: "Dark Palette"
+      name: "Dark Colours"
     }
   ],
   lipstick: [
     {
       path: "./assets/lip1.jpg",
-      name: "Shade 1"
+      name: "Bloom 2 Bloom"
     },
     {
       path: "./assets/lip2.jpg",
-      name: "Shade 2"
+      name: "Slow Dance"
     },
     {
       path: "./assets/lip3.jpg",
-      name: "Shade 3"
+      name: "Oasis"
     },
     {
       path: "./assets/lip4.jpg",
-      name: "Shade 4"
+      name: "La Lady"
     },
     {
       path: "./assets/lip5.jpg",
-      name: "Shade 5"
+      name: "On Display"
     },
     {
       path: "./assets/lip6.jpg",
-      name: "Shade 6"
+      name: "What If"
     },
     {
       path: "./assets/lip7.jpg",
-      name: "Shade 7"
+      name: "Uno Mas"
     },
     {
       path: "./assets/lip8.jpg",
-      name: "Shade 8"
+      name: "21 Questions"
     },
     {
       path: "./assets/lip9.jpg",
-      name: "Shade 9"
+      name: "27"
     },
     {
       path: "./assets/lip10.jpg",
-      name: "Shade 10"
+      name: "Still Crazy"
     },
     {
       path: "./assets/lip11.jpg",
-      name: "Shade 11"
+      name: "Money Moves"
     },
     {
       path: "./assets/lip12.jpg",
-      name: "Shade 12"
+      name: "Foolish"
     },
     {
       path: "./assets/lip13.jpg",
-      name: "Shade 13"
+      name: "Virgo Moon"
     },
     {
       path: "./assets/lip14.jpg",
-      name: "Shade 14"
+      name: "Tiana"
     },
     {
       path: "./assets/lip15.jpg",
-      name: "Shade 15"
+      name: "Gallop"
     },
     {
       path: "./assets/lip16.jpg",
-      name: "Shade 16"
+      name: "C'mon Sis"
     },
     {
       path: "./assets/lip17.jpg",
-      name: "Shade 17"
+      name: "Scorpio Moon"
     },
     {
       path: "./assets/lip18.jpg",
-      name: "Shade 18"
+      name: "C'mon Clover"
     },
     {
       path: "./assets/lip19.jpg",
-      name: "Shade 19"
+      name: "Pinkies"
     },
     {
       path: "./assets/lip20.jpg",
-      name: "Shade 20"
+      name: "Alchemist"
     },
     {
       path: "./assets/lip21.jpg",
-      name: "Shade 21"
+      name: "Quickie"
     },
     {
       path: "./assets/lip22.jpg",
-      name: "Shade 22"
+      name: "Love"
     },
     {
       path: "./assets/lip23.jpg",
-      name: "Shade 23"
+      name: "Third Eye"
     },
     {
       path: "./assets/lip24.jpg",
-      name: "Shade 24"
+      name: "Hello Stranger"
     },
     {
       path: "./assets/lip25.jpg",
-      name: "Shade 25"
+      name: "Lay Over"
     },
     {
       path: "./assets/lip26.jpg",
-      name: "Shade 26"
+      name: "Creme Fresh"
     },
     {
       path: "./assets/lip27.jpg",
-      name: "Shade 27"
+      name: "Appy"
     }
   ]
 };
